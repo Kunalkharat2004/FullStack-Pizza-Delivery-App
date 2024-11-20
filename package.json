@@ -1,19 +1,24 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node dist/server.js",
-    "format:fix": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Kunal Kharat <kunalkharat2004@gmail.com>",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.9.1",
-    "prettier": "3.3.3",
-    "typescript": "^5.6.3"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node dist/server.js",
+        "format:fix": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint:fix": "eslint --fix .",
+        "lint:check": "eslint .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Kunal Kharat <kunalkharat2004@gmail.com>",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@eslint/js": "^9.15.0",
+        "@types/node": "^22.9.1",
+        "eslint": "^9.15.0",
+        "prettier": "3.3.3",
+        "typescript": "^5.6.3",
+        "typescript-eslint": "^8.15.0"
+    }
 }
