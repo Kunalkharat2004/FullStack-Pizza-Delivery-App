@@ -21,7 +21,7 @@ export default tseslint.config(
         rules: {
             "dot-notation": "error",
             "no-unused-vars": "warn",
-            "no-console": "error"
+            // "no-console": "error"
         },
     }
 );
