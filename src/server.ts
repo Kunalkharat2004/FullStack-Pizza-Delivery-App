@@ -6,10 +6,7 @@ const main = () => {
     try {
         const PORT = config.PORT || 3000;
         app.listen(PORT, () => {
-            logger.info(`Server is running on port ${PORT}`);
-            logger.error("This is an error log 1");
-            logger.error("This is an error log 2");
-            logger.warn("This is a warning log");
+            logger.info(`Server is running on PORT ${PORT}`);
         });
     } catch (err) {
         console.error(err);

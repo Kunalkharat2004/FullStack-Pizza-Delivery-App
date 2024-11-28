@@ -18,7 +18,7 @@ const logger = winston.createLogger({
         new transports.Console({
             level: "info",
             format: format.simple(),
-            silent: config.NODE_ENV === "test",
+            // silent: config.NODE_ENV === "test",
         }),
 
         // Error Logs
@@ -32,6 +32,7 @@ const logger = winston.createLogger({
 
         // Combined Logs
         new transports.File({
+            level: "info",
             dirname: "logs",
             filename: "combined.log",
             format: format.combine(format.uncolorize(), format.simple()),
