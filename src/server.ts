@@ -6,7 +6,7 @@ const main = () => {
     try {
         const PORT = config.PORT || 3000;
         app.listen(PORT, () => {
-            logger.info(`Server is running on PORT ${PORT}`);
+            logger.info(`Server running on PORT ${PORT}`);
         });
     } catch (err) {
         console.error(err);
